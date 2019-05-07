@@ -41,11 +41,17 @@ let myInvocation2 = myFun2();
 // it's enough for the values to be the same
 let a = 6;
 let b = 6;
-console.log(a === b);
+// console.log(a === b);
 
 // for composite values to be strictly equal (===)
 // both variables would need to point to the same 
 // thing in memory
 let c = {};
 let d = c;
-console.log(c === d);
+// console.log(c === d);
+
+// blocks and scoping
+{
+  let seeMee = 5;
+}
+console.log(seeMee);
