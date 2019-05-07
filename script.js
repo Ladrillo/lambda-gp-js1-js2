@@ -30,10 +30,22 @@ let myFun = function () {
 let myFun2 = function () {
   // console.log(4);
 }
+// value of invocation: whatever the function returns
 let myInvocation = myFun();
+// if function does not return anything,
+// the value of the invocation is undefined
 let myInvocation2 = myFun2();
 
 // equality
+// for primitive values to be strictly equal (===)
+// it's enough for the values to be the same
 let a = 6;
 let b = 6;
 console.log(a === b);
+
+// for composite values to be strictly equal (===)
+// both variables would need to point to the same 
+// thing in memory
+let c = {};
+let d = c;
+console.log(c === d);
