@@ -39,6 +39,8 @@ let myInvocation = myFun();
 // the value of the invocation is undefined
 let myInvocation2 = myFun2();
 
+// review truthy versus falsy values
+
 // equality
 // for primitive values to be strictly equal (===)
 // it's enough for the values to be the same
@@ -67,4 +69,14 @@ let d = c;
 let seeMeeToo = 8;
 {
   console.log(seeMeeToo); // works fine
+}
+
+// console.log(myLittleFunction('josh', 'smith'));
+
+function myLittleFunction(a, b) {
+  console.log(`the args are ${a} ${b}`);
+}
+
+const anotherCuteFunction = function (a, b) {
+  console.log(`the args are ${a} ${b}`);
 }
