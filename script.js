@@ -200,6 +200,7 @@ const result = [];
 
 // map, returns a new array, each member being the original 
 // element, passed through a function
+// DO NOT FORGET RETURN KEYWORD
 const myArrayNice = [1, 2, 3];
 const hammer = function (e) {
   return e * e;
@@ -207,7 +208,8 @@ const hammer = function (e) {
 const myResult = myArrayNice.map(hammer)
 
 // filter, returns a new array, each surviving element needs
-// to return truthy in the callback:
+// to return truthy in the callback
+// DO NOT FORGET RETURN KEYWORD
 const myFilteredStuff = myArrayNice.filter(function (element) {
   return element % 2 === 0;
 });
