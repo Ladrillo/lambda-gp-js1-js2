@@ -105,12 +105,17 @@ const returnsEmptyObj = () => {
 const returnsEmptyObjShorter = () => ({});
 
 // visibility
+// variables in the outer scope
 const myRandomThing = 5;
+
 const logTheRandom = function () {
   const announcement = 'about to log!';
+
   function inner() {
     console.log(announcement); // this should work
-    console.log(myRandomThing);
+    console.log(myRandomThing); // is this going to work???
   }
   inner();
 }
+
+console.log(announcement);
