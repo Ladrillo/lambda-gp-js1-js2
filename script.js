@@ -206,7 +206,8 @@ const hammer = function (e) {
 }
 const myResult = myArrayNice.map(hammer)
 
-// filter
+// filter, returns a new array, each surviving element needs
+// to return truthy in the callback:
 const myFilteredStuff = myArrayNice.filter(function (element) {
   return element % 2 === 0;
 });
