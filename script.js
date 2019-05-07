@@ -124,7 +124,7 @@ function outer(preAnnouncement) {
 }
 
 // does the shebang work??
-outer('muahahaha');
+// outer('muahahaha');
 // console.log(announcement); // error!
 
 // a closure is two things in one:
@@ -134,4 +134,17 @@ outer('muahahaha');
 // arrays
 let myArray = [1, 2]; // AN ARRAY LITERAL
 let firstValue = myArray[0];
-myArray.length
+myArray.length;
+myArray.push(3);
+// causes a side effect (changing the array in place)
+// returns the new legth
+
+// review push, pop, shift, unshift, split, sort
+
+// objects
+let myFancyObject = {
+  name: 'Sam',
+  greet: function () {
+    console.log('hello!')
+  }
+};
