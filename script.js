@@ -71,12 +71,19 @@ let seeMeeToo = 8;
   // console.log(seeMeeToo); // works fine
 }
 
-console.log(anotherCuteFunction('josh', 'smith'));
+// research hoisting
+// console.log(anotherCuteFunction('josh', 'smith'));
 
 function myLittleFunction(a, b) {
   console.log(`the args are ${a} ${b}`);
 }
 
-const anotherCuteFunction = function (a, b) {
+const anotherCuteFunction = function label(a, b) {
   console.log(`the args are ${a} ${b}`);
 }
+
+const yetAnother = (a, b) => {
+  console.log(`the args are ${a} ${b}`);
+}
+
+console.log(yetAnother(1, 2));
