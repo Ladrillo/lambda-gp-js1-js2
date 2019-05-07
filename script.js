@@ -148,3 +148,10 @@ let myFancyObject = {
     console.log('hello!')
   }
 };
+
+let car = {
+  odometer: 0,
+  drive: function () {
+    this.odometer = this.odometer + 10;
+  }
+}
