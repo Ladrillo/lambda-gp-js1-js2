@@ -190,7 +190,7 @@ function findLengthAndLogIt(array, loggingFunction) {
 
 // forEach is like a loop, returns nothing,
 // we often use it to populate some result array
-// that already exists
+// that already exists and is OUTSIDE
 const result = [];
 [1, 2, 3].forEach(element => {
   if (element % 2 === 0) {
