@@ -112,12 +112,17 @@ function outer(preAnnouncement) {
   const announcement = 'about to log!';
 
   function inner() {
+    const warCry = 'charge!!';
+
     console.log(preAnnouncement); // this should work
     console.log(announcement); // this should work
     console.log(myRandomThing); // this works fine
+    console.log(warCry); // this works fine
   }
 
   inner(); // let's have outer invoke inner!
 }
+
+// does the shebang work??
 outer('muahahaha');
 // console.log(announcement); // error
