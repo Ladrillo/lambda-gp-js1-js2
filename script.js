@@ -103,3 +103,9 @@ const returnsEmptyObj = () => {
 }
 // wrap with parens if we intend to return object right away
 const returnsEmptyObjShorter = () => ({});
+
+// visibility
+const myRandomThing = 5;
+const logTheRandom = function () {
+  console.log(myRandomThing);
+}
