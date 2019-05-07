@@ -107,5 +107,10 @@ const returnsEmptyObjShorter = () => ({});
 // visibility
 const myRandomThing = 5;
 const logTheRandom = function () {
-  console.log(myRandomThing);
+  const announcement = 'about to log!';
+  function inner() {
+    console.log(announcement);
+    console.log(myRandomThing);
+  }
+  inner();
 }
