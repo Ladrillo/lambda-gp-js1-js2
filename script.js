@@ -14,6 +14,7 @@ myVarWithLet = 5;
 const myVarWithConst = true;
 // using const. can't re-assign either
 // myVarWithConst = false;
+
 // var? var can be re-declared and re-assigned
 
 // literal values
@@ -52,9 +53,16 @@ let d = c;
 
 // blocks and scoping
 // curlies define "private regions"
-// I can declare variables and
+// I can declare variables inside and
 // they are not visible from the outside
-let seeMee = 5;
 {
-  console.log(seeMee);
+  let seeMee = 5;
+}
+// console.log(seeMee); // BOOOM -> ERROR
+
+// on the other hand, code inside a block
+// can "see" declarations outside
+let seeMeeToo = 8;
+{
+  console.log(seeMeeToo); // works fine
 }
