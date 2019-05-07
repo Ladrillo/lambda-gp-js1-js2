@@ -24,5 +24,16 @@ let myBool2 = 3 < 2;
 let myArr = [];
 let myObj = { a: 1 };
 let myObj2 = myObj;
+let myFun = function () {
+  return 7;
+}
+let myFun2 = function () {
+  // console.log(4);
+}
+let myInvocation = myFun();
+let myInvocation2 = myFun2();
 
 // equality
+let a = 6;
+let b = 6;
+console.log(a === b);
