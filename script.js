@@ -155,3 +155,27 @@ let car = {
     this.odometer = this.odometer + 10;
   }
 }
+
+// higher order functions ================================
+// functions can take other functions
+
+// one! the reusable callback
+function logger(something) {
+  console.log(`this is the awesome ${something}`);
+}
+
+function sadLogger(sth) {
+  console.log(`unfortunately this is ${sth}`);
+}
+
+// two! let's be flexible and outsource some work
+// to a funcion we can inject as an argument
+function findLengthAndLogIt(array, loggingFunction) {
+  const length = array.length;
+  // console.log()
+  loggingFunction(length);
+}
+
+// three! let's see how this works in practice ===========
+findLengthAndLogIt([1, 1, 1], logger);
+findLengthAndLogIt([1, 1, 1], sadLogger);
