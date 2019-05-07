@@ -111,7 +111,7 @@ const myRandomThing = 5;
 function outer(preAnnouncement) {
   const announcement = 'about to log!';
 
-  function inner() {
+  const inner = function () {
     const warCry = 'charge!!';
 
     console.log(preAnnouncement); // this should work
@@ -126,3 +126,7 @@ function outer(preAnnouncement) {
 // does the shebang work??
 outer('muahahaha');
 // console.log(announcement); // error!
+
+// a closure is two things in one:
+// - a function object
+// - the bindings it has access to
