@@ -86,4 +86,8 @@ const yetAnother = (a, b) => {
   console.log(`the args are ${a} ${b}`);
 }
 
-console.log(yetAnother(1, 2));
+function returnsFive() {
+  return 5;
+}
+
+const returnsFiveAlt = () => 5;
