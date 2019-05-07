@@ -130,3 +130,8 @@ outer('muahahaha');
 // a closure is two things in one:
 // - a function object
 // - the bindings it has access to
+
+// arrays
+let myArray = [1, 2]; // AN ARRAY LITERAL
+let firstValue = myArray[0];
+myArray.length
