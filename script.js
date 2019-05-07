@@ -176,11 +176,37 @@ function findLengthAndLogIt(array, loggingFunction) {
   loggingFunction(length);
 }
 
-// three! let's see how this works in practice
-findLengthAndLogIt([1, 1, 1], logger);
-findLengthAndLogIt([1, 1, 1], sadLogger);
+// // three! let's see how this works in practice
+// findLengthAndLogIt([1, 1, 1], logger);
+// findLengthAndLogIt([1, 1, 1], sadLogger);
 
-// we can inline the definition of the callback!!! ===========
-findLengthAndLogIt([2, 3], (thingWeWishToLog) => {
-  console.log(thingWeWishToLog + ' banana');
+// // we can inline the definition of the callback!!! ===========
+// findLengthAndLogIt([2, 3], (thingWeWishToLog) => {
+//   console.log(thingWeWishToLog + ' banana');
+// });
+
+// forEach, map, filter reduce
+// array methods, so we can find them in Array.prototype in the MDN website
+
+// forEach is like a loop, returns nothing,
+// we often use it to populate some result array
+// that already exists
+const result = [];
+[1, 2, 3].forEach(element => {
+  if (element % 2 === 0) {
+    result.push(element)
+  }
+});
+
+// map, returns a new array, each member being the original 
+// element, passed through a function
+const myArrayNice = [1, 2, 3];
+const hammer = function (e) {
+  return e * e;
+}
+const myResult = myArrayNice.map(hammer)
+
+// filter
+const myFilteredStuff = myArrayNice.filter(function (element) {
+  return element % 2 === 0;
 });
