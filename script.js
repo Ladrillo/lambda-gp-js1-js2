@@ -15,3 +15,14 @@ const myVarWithConst = true;
 // using const. can't re-assign either
 // myVarWithConst = false;
 // var? var can be re-declared and re-assigned
+
+// literal values
+let myNum = 5;
+let myNum2 = 5 + 1;
+let myBool = false;
+let myBool2 = 3 < 2;
+let myArr = [];
+let myObj = { a: 1 };
+let myObj2 = myObj;
+
+// equality
