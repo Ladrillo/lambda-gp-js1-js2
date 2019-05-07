@@ -51,7 +51,10 @@ let d = c;
 // console.log(c === d);
 
 // blocks and scoping
+// curlies define "private regions"
+// I can declare variables and
+// they are not visible from the outside
+let seeMee = 5;
 {
-  let seeMee = 5;
+  console.log(seeMee);
 }
-console.log(seeMee);
