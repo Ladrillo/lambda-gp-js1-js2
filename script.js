@@ -68,10 +68,10 @@ let d = c;
 // can "see" declarations outside
 let seeMeeToo = 8;
 {
-  console.log(seeMeeToo); // works fine
+  // console.log(seeMeeToo); // works fine
 }
 
-// console.log(myLittleFunction('josh', 'smith'));
+console.log(anotherCuteFunction('josh', 'smith'));
 
 function myLittleFunction(a, b) {
   console.log(`the args are ${a} ${b}`);
