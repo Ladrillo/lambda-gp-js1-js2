@@ -74,20 +74,32 @@ let seeMeeToo = 8;
 // research hoisting
 // console.log(anotherCuteFunction('josh', 'smith'));
 
+// function declaration
 function myLittleFunction(a, b) {
   console.log(`the args are ${a} ${b}`);
 }
 
+// function expression
 const anotherCuteFunction = function label(a, b) {
   console.log(`the args are ${a} ${b}`);
 }
 
+// function expression with arrow syntax (no return)
 const yetAnother = (a, b) => {
   console.log(`the args are ${a} ${b}`);
 }
 
+// function declaration (hoist)
 function returnsFive() {
   return 5;
 }
 
+// short hand: no curlies, no return keyword, no function keyword...
 const returnsFiveAlt = () => 5;
+
+// gotcha with returning objects
+const returnsEmptyObj = () => {
+  return {};
+}
+// wrap with parens if we intend to return object right away
+const returnsEmptyObjShorter = () => ({});
