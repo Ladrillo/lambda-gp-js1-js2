@@ -125,4 +125,4 @@ function outer(preAnnouncement) {
 
 // does the shebang work??
 outer('muahahaha');
-// console.log(announcement); // error
+// console.log(announcement); // error!
