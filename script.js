@@ -21,18 +21,20 @@ const myVarWithConst = true;
 let myNum = 5;
 let myNum2 = 5 + 1;
 let myBool = false;
-let myBool2 = 3 < 2;
-let myArr = [];
-let myObj = { a: 1 };
+let myBool2 = 3 < 2; // bolean! Not number
+let myArr = []; // array literal
+let myObj = { a: 1 }; // object literal
 let myObj2 = myObj;
+// the value of myFun IS NOT 7, it's just a "function" (an object)
 let myFun = function () {
   return 7;
 }
 let myFun2 = function () {
   // console.log(4);
 }
-// value of invocation: whatever the function returns
+// value of invocation: whatever the function returns IMPORTANT
 let myInvocation = myFun();
+
 // if function does not return anything,
 // the value of the invocation is undefined
 let myInvocation2 = myFun2();
