@@ -108,7 +108,7 @@ const returnsEmptyObjShorter = () => ({});
 // variables in the outer scope
 const myRandomThing = 5;
 
-const logTheRandom = function (preAnnouncement) {
+function outer(preAnnouncement) {
   const announcement = 'about to log!';
 
   function inner() {
@@ -116,7 +116,8 @@ const logTheRandom = function (preAnnouncement) {
     console.log(announcement); // this should work
     console.log(myRandomThing); // this works fine
   }
-  inner();
+
+  inner(); // let's have outer invoke inner!
 }
-logTheRandom('muahahaha');
+outer('muahahaha');
 // console.log(announcement); // error
