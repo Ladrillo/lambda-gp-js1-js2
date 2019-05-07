@@ -12,5 +12,6 @@ let myVarWithLet = 7;
 myVarWithLet = 5;
 // using const. can't re-declare
 const myVarWithConst = true;
-// using const. can't re-assing either
-myVarWithConst = false;
+// using const. can't re-assign either
+// myVarWithConst = false;
+// var? var can be re-declared and re-assigned
