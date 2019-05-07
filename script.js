@@ -176,6 +176,11 @@ function findLengthAndLogIt(array, loggingFunction) {
   loggingFunction(length);
 }
 
-// three! let's see how this works in practice ===========
+// three! let's see how this works in practice
 findLengthAndLogIt([1, 1, 1], logger);
 findLengthAndLogIt([1, 1, 1], sadLogger);
+
+// we can inline the definition of the callback!!! ===========
+findLengthAndLogIt([2, 3], (thingWeWishToLog) => {
+  console.log(thingWeWishToLog + ' banana');
+});
