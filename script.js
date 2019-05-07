@@ -51,16 +51,16 @@ let c = {};
 let d = c;
 // console.log(c === d);
 
-// blocks and scoping
+// blocks and scoping ================================
 // curlies define "private regions"
 // I can declare variables inside and
 // they are not visible from the outside
 {
   let seeMee = 5;
 }
-// console.log(seeMee); // BOOOM -> ERROR
+// console.log(seeMee); // BOOOM -> this is an ERROR
 
-// on the other hand, code inside a block
+// on the other hand, code inside a block ============
 // can "see" declarations outside
 let seeMeeToo = 8;
 {
